@@ -12,6 +12,20 @@
 <img width="1059" alt="image" src="https://github.com/user-attachments/assets/3edd58cc-5d3f-40cf-9c2a-fa1de9a4a98b" />
 
 
+# MCP Logs Location
+1. Path : /Users/welcome/Library/Logs/Claude/
+
+```
+
+(mcp_python_ws) welcome@jaisairams-Laptop Claude % pwd
+/Users/welcome/Library/Logs/Claude
+(mcp_python_ws) welcome@jaisairams-Laptop Claude % ls -ltr
+total 784
+-rw-r--r--  1 welcome  staff  133561 Mar 28 00:46 mcp-server-greeter.log
+-rw-r--r--  1 welcome  staff   64782 Mar 28 00:46 mcp-server-weather.log
+-rw-r--r--  1 welcome  staff  150576 Mar 28 00:46 mcp.log
+
+```
 
 # References
 
