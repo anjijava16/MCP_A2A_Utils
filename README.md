@@ -1,6 +1,15 @@
 # MCP_understanding
 
-1. https://medium.com/data-and-beyond/the-model-context-protocol-mcp-the-ultimate-guide-c40539e2a8e7
+
+
+
+Sample Demo App
+
+<img width="1035" alt="image" src="https://github.com/user-attachments/assets/69e59e25-728c-4e49-affe-372c140d5d94" />
+
+
+
+https://medium.com/data-and-beyond/the-model-context-protocol-mcp-the-ultimate-guide-c40539e2a8e7
 
 
 
