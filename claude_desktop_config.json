@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "greeter": {
+      "command": "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/mcp_claude/mcp_welcome_api/venv/bin/python",
+      "args": ["/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/mcp_claude/mcp_welcome_api/mcp_welcome.py"]
+    },
+    "weather": {
+      "command": "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/mcp_claude/mcp_welcome_api/venv/bin/python",
+      "args": ["/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/mcp_claude/mcp_welcome_api/weather.py"]
+    }
+  }
+}
