@@ -3,9 +3,14 @@
 
 
 
-Sample Demo App
+# Sample Demo App
 
 <img width="1035" alt="image" src="https://github.com/user-attachments/assets/69e59e25-728c-4e49-affe-372c140d5d94" />
+
+# Sample Config File
+
+<img width="1035" alt="image" src="https://github.com/user-attachments/assets/af193be7-7e24-4845-9178-804073c4fd54" />
+
 
 
 
