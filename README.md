@@ -9,7 +9,8 @@
 
 # Sample Config File
 
-<img width="1035" alt="image" src="https://github.com/user-attachments/assets/af193be7-7e24-4845-9178-804073c4fd54" />
+<img width="1059" alt="image" src="https://github.com/user-attachments/assets/3edd58cc-5d3f-40cf-9c2a-fa1de9a4a98b" />
+
 
 
 
