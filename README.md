@@ -114,3 +114,6 @@ zsh: suspended  tail -20f mcp-server-greeter.log
 3. https://www.youtube.com/watch?v=v_6EXt6T83I
 4. https://modelcontextprotocol.io/introduction
 5. https://github.com/coleam00/ottomator-agents/tree/main/pydantic-ai-mcp-agent
+
+# Example References
+1. https://www.dremio.com/blog/building-a-basic-mcp-server-with-python/
