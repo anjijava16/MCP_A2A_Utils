@@ -120,3 +120,6 @@ zsh: suspended  tail -20f mcp-server-greeter.log
 2. https://github.com/HeetVekariya/Linear-Regression-MCP
 3. https://github.com/singlestore-labs/mcp-server-singlestore
 4. https://github.com/jlowin/fastmcp
+
+# MCP workshop here
+1. https://github.com/akranga/mcp-workshop
