@@ -1,7 +1,11 @@
 # MCP_understanding
 
 
-
+# Installation steps
+1. pip install uv
+2. uv init MCP_servers_and_a2a_utils
+3. uv run mcp install main.py
+4. uv run mcp 
 
 # Sample Demo App
 

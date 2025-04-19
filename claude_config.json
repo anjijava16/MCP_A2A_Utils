@@ -1,0 +1,66 @@
+{
+  "mcpServers": {
+    "greeter": {
+      "command": "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/mcp_claude/mcp_welcome_api/venv/bin/python",
+      "args": [
+        "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/mcp_claude/mcp_welcome_api/mcp_welcome.py"
+      ]
+    },
+    "weather": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/weather.py"
+      ]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/welcome/Desktop",
+        "/Users/welcome/Downloads"
+      ]
+    },
+    "mcp-server-docker": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-docker"
+      ]
+    },
+    "LeaveManager": {
+      "command": "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/.venv/bin/python",
+      "args": [
+        "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/mcp_database_server/main.py"
+      ]
+    },
+    "Math": {
+      "command": "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/.venv/bin/python",
+      "args": [
+        "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/servers/math.py"
+      ]
+    },
+    "tavily_search": {
+      "command": "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/.venv/bin/python",
+      "args": [
+        "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/servers/tavily.py"
+      ]
+    },
+    "Weather": {
+      "command": "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/.venv/bin/python",
+      "args": [
+        "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/servers/weather.py"
+      ]
+    },
+    "youtube_transcript": {
+      "command": "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/.venv/bin/python",
+      "args": [
+        "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/MCP_servers_and_a2a_utils/servers/yt_transcript.py"
+      ]
+    }
+  }
+}
