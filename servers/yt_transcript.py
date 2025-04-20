@@ -21,4 +21,5 @@ def get_youtube_transcript(url: str) -> dict:
         return {"error": str(e)}
 
 if __name__ == "__main__":
-    mcp.run(transport="stdio")
+    #mcp.run(transport="stdio")
+    mcp.run()

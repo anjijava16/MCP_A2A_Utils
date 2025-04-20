@@ -15,7 +15,6 @@
 
 <img width="1059" alt="image" src="https://github.com/user-attachments/assets/3edd58cc-5d3f-40cf-9c2a-fa1de9a4a98b" />
 
-
 # MCP Logs Location
 1. Path : /Users/welcome/Library/Logs/Claude/
 
