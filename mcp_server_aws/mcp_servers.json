@@ -1,0 +1,34 @@
+{
+    "mcpServers": {
+      "greeter": {
+        "command": "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/mcp_claude/mcp_welcome_api/venv/bin/python",
+        "args": [
+          "/Users/welcome/Library/Mobile Documents/com~apple~CloudDocs/Sai_Workspace/mcp_claude/mcp_welcome_api/mcp_welcome.py"
+        ]
+      },
+      "filesystem": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "/Users/welcome/Desktop",
+          "/Users/welcome/Downloads"
+        ]
+      },
+      
+     
+      "LeaveManager": {
+         "command": "/Users/welcome/Desktop/Tech_Repos/python_envs/mcp_servers/mcp_end_end/.venv/bin/python",
+        "args": [
+         "/Users/welcome/Desktop/Tech_Repos/python_envs/mcp_servers/mcp_end_end/mcp_database_server/main.py"
+        ]
+      }
+      ,
+      "aws-mcp-server": {
+         "command": "/Users/welcome/Desktop/Tech_Repos/python_envs/mcp_servers/mcp_end_end/.venv/bin/python",
+        "args": [
+         " /Users/welcome/Desktop/Tech_Repos/python_envs/mcp_servers/mcp_end_end/mcp_server_aws/server.py"
+        ]
+      }
+    }
+  }
