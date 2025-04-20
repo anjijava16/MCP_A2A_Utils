@@ -1,12 +1,14 @@
 import asyncio
+
+from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_mcp_adapters.client import MultiServerMCPClient
-from langgraph.prebuilt import create_react_agent
-from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_openai import ChatOpenAI
+from langgraph.prebuilt import create_react_agent
 
 from utils import init
 
 init()
+
 # Example query
 # "What is weather in newyork"
 # "What is FastMCP?"

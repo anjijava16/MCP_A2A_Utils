@@ -1,6 +1,8 @@
 from mcp.server.fastmcp import FastMCP
 from typing import List
 
+import youtube_transcript_api
+
 # In-memory mock database with 20 leave days to start
 employee_leaves = {
     "E001": {"balance": 18, "history": ["2024-12-25", "2025-01-01"]},
@@ -10,7 +12,7 @@ employee_leaves = {
 # Create MCP server
 mcp = FastMCP("LeaveManager")
 
-mcp.tool()
+
 # Tool: Check Leave Balance
 @mcp.tool()
 def get_leave_balance(employee_id: str) -> str:
@@ -19,7 +21,48 @@ def get_leave_balance(employee_id: str) -> str:
     if data:
         return f"{employee_id} has {data['balance']} leave days remaining."
     return "Employee ID not found."
+# @mcp.tool()
+# def get_youtube_transcript(url: str) -> dict:
+#     """Fetches transcript from a given YouTube URL."""
+#     video_id_match = re.search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url)
+#     if not video_id_match:
+#         return {"error": "Invalid YouTube URL"}
 
+#     video_id = video_id_match.group(1)
+
+#     try:
+#         transcript = youtube_transcript_api.get_transcript(video_id)
+#         transcript_text = "\n".join([entry["text"] for entry in transcript])
+#         return {"transcript": transcript_text}
+#     except Exception as e:
+#         return {"error": str(e)}
+
+from urllib.parse import urlparse, parse_qs
+from youtube_transcript_api import YouTubeTranscriptApi
+
+
+@mcp.tool()
+def get_youtube_transcript(url: str) -> dict:
+    """Fetches transcript from a given YouTube URL."""
+
+    try:
+        parsed_url = urlparse(url)
+        if "youtube.com" in parsed_url.netloc:
+            query_params = parse_qs(parsed_url.query)
+            video_id = query_params.get("v", [None])[0]
+        elif "youtu.be" in parsed_url.netloc:
+            video_id = parsed_url.path.lstrip("/")
+        else:
+            return {"error": "Unsupported YouTube URL format"}
+
+        if not video_id or len(video_id) != 11:
+            return {"error": "Invalid YouTube video ID"}
+
+        transcript = YouTubeTranscriptApi.get_transcript(video_id)
+        transcript_text = "\n".join([entry["text"] for entry in transcript])
+        return {"transcript": transcript_text}
+    except Exception as e:
+        return {"error": str(e)}
 
 # Tool: Apply for Leave with specific dates
 @mcp.tool()
