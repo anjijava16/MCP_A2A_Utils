@@ -2,3 +2,4 @@ pip install mcp
 mcp
 "mcp[cli]" 
 httpx
+fastmcp
