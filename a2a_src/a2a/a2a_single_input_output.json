@@ -1,0 +1,132 @@
+Connecting to agent at http://localhost:10007...
+✅ Connected. Streaming supported: True
+
+Enter your query below. Type 'exit' to quit.
+
+🟢 Your query: What time is it?
+
+=== Streaming Update ===
+{                                                                                                                                                                       
+  "id": "cd70c5c9-0e0b-4afd-9a16-70c99f9357ac",                                                                                                                         
+  "jsonrpc": "2.0",                                                                                                                                                     
+  "result": {                                                                                                                                                           
+    "contextId": "f3d0b512-d271-4c6e-a97d-782a7324fc13",                                                                                                                
+    "history": [                                                                                                                                                        
+      {                                                                                                                                                                 
+        "contextId": "f3d0b512-d271-4c6e-a97d-782a7324fc13",                                                                                                            
+        "kind": "message",                                                                                                                                              
+        "messageId": "725ad6047b3d4b2b9f4f45aa08466abd",                                                                                                                
+        "parts": [                                                                                                                                                      
+          {                                                                                                                                                             
+            "kind": "text",                                                                                                                                             
+            "text": "What time is it?"                                                                                                                                  
+          }                                                                                                                                                             
+        ],                                                                                                                                                              
+        "role": "user",                                                                                                                                                 
+        "taskId": "f5f40808-ec2e-4927-a0ba-a5ad3e6aae7a"                                                                                                                
+      }                                                                                                                                                                 
+    ],                                                                                                                                                                  
+    "id": "f5f40808-ec2e-4927-a0ba-a5ad3e6aae7a",                                                                                                                       
+    "kind": "task",                                                                                                                                                     
+    "status": {                                                                                                                                                         
+      "state": "submitted"                                                                                                                                              
+    }                                                                                                                                                                   
+  }                                                                                                                                                                     
+}                                                                                                                                                                       
+
+=== Streaming Update ===
+{                                                                                                                                                                       
+  "id": "cd70c5c9-0e0b-4afd-9a16-70c99f9357ac",                                                                                                                         
+  "jsonrpc": "2.0",                                                                                                                                                     
+  "result": {                                                                                                                                                           
+    "contextId": "f3d0b512-d271-4c6e-a97d-782a7324fc13",                                                                                                                
+    "final": false,                                                                                                                                                     
+    "kind": "status-update",                                                                                                                                            
+    "status": {                                                                                                                                                         
+      "message": {                                                                                                                                                      
+        "contextId": "f3d0b512-d271-4c6e-a97d-782a7324fc13",                                                                                                            
+        "kind": "message",                                                                                                                                              
+        "messageId": "ce1dd601-c46f-4416-b5bf-f34754418e1f",                                                                                                            
+        "parts": [                                                                                                                                                      
+          {                                                                                                                                                             
+            "kind": "text",                                                                                                                                             
+            "text": "Looking up the current time..."                                                                                                                    
+          }                                                                                                                                                             
+        ],                                                                                                                                                              
+        "role": "agent",                                                                                                                                                
+        "taskId": "f5f40808-ec2e-4927-a0ba-a5ad3e6aae7a"                                                                                                                
+      },                                                                                                                                                                
+      "state": "working"                                                                                                                                                
+    },                                                                                                                                                                  
+    "taskId": "f5f40808-ec2e-4927-a0ba-a5ad3e6aae7a"                                                                                                                    
+  }                                                                                                                                                                     
+}                                                                                                                                                                       
+
+=== Streaming Update ===
+{                                                                                                                                                                       
+  "id": "cd70c5c9-0e0b-4afd-9a16-70c99f9357ac",                                                                                                                         
+  "jsonrpc": "2.0",                                                                                                                                                     
+  "result": {                                                                                                                                                           
+    "contextId": "f3d0b512-d271-4c6e-a97d-782a7324fc13",                                                                                                                
+    "final": false,                                                                                                                                                     
+    "kind": "status-update",                                                                                                                                            
+    "status": {                                                                                                                                                         
+      "message": {                                                                                                                                                      
+        "contextId": "f3d0b512-d271-4c6e-a97d-782a7324fc13",                                                                                                            
+        "kind": "message",                                                                                                                                              
+        "messageId": "2e8cd5c7-ed77-4328-a29d-9a93b1e0aef1",                                                                                                            
+        "parts": [                                                                                                                                                      
+          {                                                                                                                                                             
+            "kind": "text",                                                                                                                                             
+            "text": "Processing the time result..."                                                                                                                     
+          }                                                                                                                                                             
+        ],                                                                                                                                                              
+        "role": "agent",                                                                                                                                                
+        "taskId": "f5f40808-ec2e-4927-a0ba-a5ad3e6aae7a"                                                                                                                
+      },                                                                                                                                                                
+      "state": "working"                                                                                                                                                
+    },                                                                                                                                                                  
+    "taskId": "f5f40808-ec2e-4927-a0ba-a5ad3e6aae7a"                                                                                                                    
+  }                                                                                                                                                                     
+}                                                                                                                                                                       
+
+=== Streaming Update ===
+{                                                                                                                                                                       
+  "id": "cd70c5c9-0e0b-4afd-9a16-70c99f9357ac",                                                                                                                         
+  "jsonrpc": "2.0",                                                                                                                                                     
+  "result": {                                                                                                                                                           
+    "append": false,                                                                                                                                                    
+    "artifact": {                                                                                                                                                       
+      "artifactId": "6ebe0c78-3f8e-4232-b151-b7b2f60deecc",                                                                                                             
+      "description": "Result of request to agent.",                                                                                                                     
+      "name": "current_result",                                                                                                                                         
+      "parts": [                                                                                                                                                        
+        {                                                                                                                                                               
+          "kind": "text",                                                                                                                                               
+          "text": "The current time is 00:44:47."                                                                                                                       
+        }                                                                                                                                                               
+      ]                                                                                                                                                                 
+    },                                                                                                                                                                  
+    "contextId": "f3d0b512-d271-4c6e-a97d-782a7324fc13",                                                                                                                
+    "kind": "artifact-update",                                                                                                                                          
+    "lastChunk": true,                                                                                                                                                  
+    "taskId": "f5f40808-ec2e-4927-a0ba-a5ad3e6aae7a"                                                                                                                    
+  }                                                                                                                                                                     
+}                                                                                                                                                                       
+
+=== Streaming Update ===
+{                                                                                                                                                                       
+  "id": "cd70c5c9-0e0b-4afd-9a16-70c99f9357ac",                                                                                                                         
+  "jsonrpc": "2.0",                                                                                                                                                     
+  "result": {                                                                                                                                                           
+    "contextId": "f3d0b512-d271-4c6e-a97d-782a7324fc13",                                                                                                                
+    "final": true,                                                                                                                                                      
+    "kind": "status-update",                                                                                                                                            
+    "status": {                                                                                                                                                         
+      "state": "completed"                                                                                                                                              
+    },                                                                                                                                                                  
+    "taskId": "f5f40808-ec2e-4927-a0ba-a5ad3e6aae7a"                                                                                                                    
+  }                                                                                                                                                                     
+}                                                                                                                                                                       
+
+🟢 Your query: 
