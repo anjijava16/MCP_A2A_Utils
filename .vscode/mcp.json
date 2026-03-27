@@ -1,0 +1,13 @@
+{
+	"servers": {
+		"local-mcp-server-0da9d8df": {
+			"url": "http://localhost:7080/sse",
+			"type": "http"
+		},
+		"MYSQL_DB_Operations_MCP": {
+			"url": "http://0.0.0.0:7080/sse",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}
