@@ -1,0 +1,27 @@
+# MCP Server Requirements
+
+## Core Dependencies
+fastmcp>=0.1.0
+httpx>=0.24.0
+
+## Optional Dependencies
+python-dotenv>=1.0.0  # For .env file support
+
+## Development Dependencies (optional)
+pytest>=7.0.0  # For testing
+black>=23.0.0  # Code formatting
+pylint>=2.16.0  # Linting
+
+## Notes
+- All APIs except Tavily and NewsAPI require no API keys
+- FastMCP must be installed from the latest version
+- httpx is used for all HTTP requests (async support)
+- Python 3.8+ is required
+
+## Installation
+pip install -r requirements.txt
+
+## Environment Variables Required
+- TAVILY_API_KEY (for web search)
+- NEWS_API_KEY (for news features)
+- PORT (optional, default: 7080)
